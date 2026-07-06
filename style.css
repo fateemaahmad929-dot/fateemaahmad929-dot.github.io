@@ -1,0 +1,146 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #18bc9c;
+    --dark-color: #2c3e50;
+    --light-color: #f8f9fa;
+    --accent-color: #e74c3c;
+    --sidebar-width: 280px;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: #f4f6f9;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Sidebar Navigation Layout */
+#wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    min-height: 100vh;
+}
+
+#sidebar {
+    min-width: var(--sidebar-width);
+    max-width: var(--sidebar-width);
+    background: var(--dark-color);
+    color: #fff;
+    transition: all 0.3s;
+    z-index: 999;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #1a252f;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar ul li a {
+    padding: 12px 20px;
+    font-size: 1.05em;
+    display: block;
+    color: #b3c1d1;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border-left: 4px solid transparent;
+}
+
+#sidebar ul li a:hover, #sidebar ul li.active > a {
+    color: #fff;
+    background: rgba(255,255,255,0.05);
+    border-left: 4px solid var(--secondary-color);
+}
+
+#content {
+    width: 100%;
+    padding: 40px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    background: #ffffff;
+}
+
+/* Navbar Toggle for Mobile */
+#sidebarCollapse {
+    display: none;
+}
+
+/* Header & Card Customizations */
+.profile-img-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-img-container img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px solid var(--secondary-color);
+    object-fit: cover;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.btn-custom {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #128f76;
+    color: white;
+}
+
+/* Footer Styling */
+footer {
+    background: var(--dark-color);
+    color: #b3c1d1;
+    padding: 20px 0;
+    margin-top: 50px;
+    border-radius: 12px 12px 0 0;
+}
+
+footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Responsive Rules */
+@media (max-width: 991.98px) {
+    #sidebar {
+        margin-left: calc(-1 * var(--sidebar-width));
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse {
+        display: block;
+    }
+    #content {
+        padding: 20px;
+    }
+}

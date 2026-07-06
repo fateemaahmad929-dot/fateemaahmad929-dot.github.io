@@ -50,58 +50,70 @@
         </nav>
 
         <main>
-            <section class="hero-section py-5">
+            <section class="contact-section py-5">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-7">
-                <span class="badge bg-success mb-3 px-3 py-2 fs-6">Welcome to My Digital Space</span>
-                <h1 class="display-4 fw-bold text-dark">Building Modern, Standard Web Experiences</h1>
-                <p class="lead text-muted mt-3">
-                    Hi! I'm <strong>Fatima Ahmad Aminu</strong>, a dedicated 200 Level Computer Science student at <strong>Northwest University, Kano</strong>. Driven by code and creativity, I specialize in crafting structured, accessible, and user-friendly markup languages with a deep focus on semantic HTML.
+        <h2 class="display-5 fw-bold text-dark border-bottom pb-3 mb-4">Contact Me</h2>
+        
+        <div class="row">
+            <!-- Info Column -->
+            <div class="col-lg-5 mb-5 mb-lg-0">
+                <h3 class="fw-bold text-secondary mb-3">Let's Connect!</h3>
+                <p class="lead">
+                    Whether you want to discuss a software project, collaborate on open-source web development, or learn more about my academic work at Northwest University—I would love to connect.
                 </p>
-                <div class="d-flex gap-3 mt-4">
-                    <a href="about.html" class="btn btn-custom btn-lg">Learn More About Me</a>
-                    <a href="contact.html" class="btn btn-outline-dark btn-lg">Get In Touch</a>
-                </div>
-            </div>
-            <div class="col-lg-5 text-center mt-5 mt-lg-0">
-                <div class="card p-4 shadow-sm border-0 bg-light">
-                    <div class="card-body">
-                        <h4 class="fw-bold mb-3">Quick Overview</h4>
-                        <ul class="list-unstyled text-start fs-5">
-                            <li class="mb-2">📍 <strong>Base:</strong> Kano, Nigeria</li>
-                            <li class="mb-2">🏫 <strong>Uni:</strong> Northwest University</li>
-                            <li class="mb-2">💻 <strong>Aim:</strong> Web Developer</li>
-                            <li class="mb-2">⚙️ <strong>Core Skill:</strong> HTML5 Mastery</li>
-                        </ul>
+                
+                <div class="mt-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="fs-4 me-3">📧</span>
+                        <div>
+                            <strong>Email Address</strong><br>
+                            <a href="mailto:fateemaahmad929@gmail.com" class="text-dark">fateemaahmad929@gmail.com</a>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="row mt-5 pt-4 border-top">
-            <div class="col-md-4 mb-4">
-                <div class="card p-3 h-100 text-center">
-                    <div class="card-body">
-                        <h3 class="h5 fw-bold text-dark">Semantic Architecture</h3>
-                        <p class="text-muted">Creating clean, accessible structures that form the strong skeleton of standard web applications.</p>
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="fs-4 me-3">📞</span>
+                        <div>
+                            <strong>Phone Lines</strong><br>
+                            <a href="tel:09076201125" class="text-dark">09076201125</a>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="fs-4 me-3">🌐</span>
+                        <div>
+                            <strong>GitHub profile</strong><br>
+                            <a href="https://github.com/fateemaahmad929-dot" target="_blank" class="text-dark">github.com/fateemaahmad929-dot</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
-                <div class="card p-3 h-100 text-center">
-                    <div class="card-body">
-                        <h3 class="h5 fw-bold text-dark">Academic Excellence</h3>
-                        <p class="text-muted">Applying concepts from Northwest University’s rigorous 200 Level computer science curriculum directly to active projects.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card p-3 h-100 text-center">
-                    <div class="card-body">
-                        <h3 class="h5 fw-bold text-dark">Continuous Learning</h3>
-                        <p class="text-muted">Expanding expertise from certified learning pipelines like freeCodeCamp to develop industry-grade skillsets.</p>
-                    </div>
+
+            <!-- Form Column -->
+            <div class="col-lg-7">
+                <div class="card border-0 bg-light p-4 shadow-sm">
+                    <h4 class="fw-bold mb-3">Send Me a Message</h4>
+                    <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you for reaching out! Fatima will respond to you shortly.');">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Collaboration Inquiry" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Write your message details here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-custom w-100">Send Message</button>
+                    </form>
                 </div>
             </div>
         </div>
